@@ -453,4 +453,4 @@ Error generating stack: `+o.message+`
 `;function Ra({logo:e,title:t,description:n}){return C.jsx(sw,{children:C.jsxs("div",{className:"sub-content",children:[C.jsx("div",{className:"img",children:C.jsx("img",{src:e,alt:"logo"})}),C.jsxs("div",{className:"description",children:[C.jsx("h3",{children:t}),C.jsx("p",{children:n})]})]})})}const uw=en.main`
     margin: 0px;
     width: 100%;
-`,cw=i1([{path:"/",element:C.jsx(w1,{}),errorElement:C.jsx(nw,{}),children:[{index:!0,element:C.jsx(Wf,{})},{path:"home",element:C.jsx(Wf,{})},{path:"resume",element:C.jsx(Ky,{})},{path:"projects",element:C.jsx(tw,{})}]}]);function fw(){return C.jsx(uw,{children:C.jsx(p1,{router:cw})})}ja.createRoot(document.getElementById("root")).render(C.jsx(Fe.StrictMode,{children:C.jsx(fw,{})}));
+`,cw=i1([{path:"/mbach",element:C.jsx(w1,{}),errorElement:C.jsx(nw,{}),children:[{index:!0,element:C.jsx(Wf,{})},{path:"home",element:C.jsx(Wf,{})},{path:"resume",element:C.jsx(Ky,{})},{path:"projects",element:C.jsx(tw,{})}]}]);function fw(){return C.jsx(uw,{children:C.jsx(p1,{router:cw})})}ja.createRoot(document.getElementById("root")).render(C.jsx(Fe.StrictMode,{children:C.jsx(fw,{})}));

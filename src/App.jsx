@@ -3,7 +3,7 @@ import { HomeLayout, Home, Resume, Projects, Error } from "./pages";
 import Wrapper from "./assets/wrappers/App";
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/mbach",
     element: <HomeLayout />,
     errorElement: <Error />,
     children: [

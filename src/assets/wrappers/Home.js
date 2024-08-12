@@ -60,7 +60,7 @@ const Wrapper = styled.div`
 
   @media (max-width: 1600px) {
     .type-animation {
-      font-size: 45px;
+      font-size: 50px;
       font-size: 900;
     }
   }

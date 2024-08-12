@@ -1,6 +1,6 @@
 import React from "react";
 import Wrapper from "../assets/wrappers/Home";
-import img from "../assets/images/test.jpg";
+import img from "../assets/images/hero-background.jpeg";
 import { ReactTyped } from "react-typed";
 import { FaLinkedin, FaGithubSquare, FaInstagram } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
@@ -16,7 +16,7 @@ function Home() {
             strings={[
               "awake coding",
               "an engineering student",
-              "a footballing lover",
+              "a football lover",
               "happy to connect",
             ]}
             typeSpeed={80}

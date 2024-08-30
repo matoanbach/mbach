@@ -2,13 +2,45 @@ import React, { useEffect, useRef } from "react";
 import Wrapper from "../assets/wrappers/Resume";
 import jobify_logo from "../assets/images/jobify_logo.png";
 import comfy_sloth_logo from "../assets/images/comfy_sloth_logo.png";
-import quacky_logo from "../assets/images/quacky_logo.png"
-import quack from "../assets/images/quack.jpeg"
+import quacky_logo from "../assets/images/quacky_logo.png";
+import quack from "../assets/images/quack.jpeg";
 import esp32_logo from "../assets/images/esp32_logo.png";
+import http_logo from "../assets/images/http_logo.png";
+import shell_logo from "../assets/images/shell_logo.png";
+import dns_logo from "../assets/images/dns_logo.png";
 
 import { Project } from "./";
 
 const projects = [
+  {
+    logo: dns_logo,
+    title: "DNS Server",
+    link: "https://github.com/matoanbach/http-server",
+    description: [
+      "Developed a DNS server in C++ capable of parsing and responding to basic queries, simulating real-world DNS mechanisms on a Unix-based system, using Unix, dig command-line and Visual Studio Code to debug",
+      "Engineered a custom packet parsing algorithm to efficiently decode and extract DNS query fields from UDP packets, achieving seamless handling of DNS protocols according to RFC 1035",
+      "Integrated advanced DNS features such as domain name compression to reduce packet size, enhancing server efficiency and compliance with DNS standards",
+    ],
+  },
+  {
+    logo: http_logo,
+    title: "HTTP Server",
+    link: "https://github.com/matoanbach/http-server",
+    description: [
+      "Designed and implemented a HTTP server using C++ and CMake, handling GET/POST requests, serving static files and gzip compressed files, and managing multiple concurrent connections",
+      "Extracted URL paths and implemented routing logic to serve different resources, improving server response accuracy by 95%",
+      "Applied multithreading to optimize server performance to handle concurrent connections efficiently, improving response times under load by 50",
+    ],
+  },
+  {
+    logo: shell_logo,
+    title: "Shell",
+    link: "https://github.com/matoanbach/shell",
+    description: [
+      "Implemented a Unix-like shell with full support for Read-Eval-Print Loop (REPL) to handle user input, command execution, and output display",
+      "Developed essential built-in shell commands such as exit, echo, type, pwd, and cd, ensuring correct interpretation and execution of user commands",
+    ],
+  },
   {
     logo: esp32_logo,
     title: "ESP32 Starter Kit",

@@ -8,10 +8,31 @@ import esp32_logo from "../assets/images/esp32_logo.png";
 import http_logo from "../assets/images/http_logo.png";
 import shell_logo from "../assets/images/shell_logo.png";
 import dns_logo from "../assets/images/dns_logo.png";
+import line_follower_logo from "../assets/images/line_follower.jpeg";
+import _3dswim_logo from "../assets/images/3dswim_logo.jpeg";
 
 import { Project } from "./";
 
 const projects = [
+  {
+    logo: _3dswim_logo,
+    title: "3D S.W.I.M",
+    link: "https://github.com/matoanbach/3d-swim",
+    description: [
+      "Engineered a system to visualize invisible waves in 3D by using a Delta 3D printer, MainsailOS, Klipper, Raspberry Pi 3 and Arduino Uno R3",
+      "Developed an Arduino program to collect and process real-time ultrasonic data as analog values, converting to digital values for further analysis",
+      "Visualized the ultrasonic waves in real-time using Matplotlib and NumPy to generate a dynamic polar plots",
+    ],
+  },
+  {
+    logo: line_follower_logo,
+    title: "VEX Line Follower",
+    link: "https://github.com/matoanbach/vex-line-follower",
+    description: [
+      "Designed and developed a line-following robot utilizing the VEX Cortex M4 microcontroller, C, and ROBOTC",
+      "Implemented and turned a PID (Proportional-Integral-Derivative) controller algorithm to enhance the precision of robot’s movements",
+    ],
+  },
   {
     logo: dns_logo,
     title: "DNS Server",

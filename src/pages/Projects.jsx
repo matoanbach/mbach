@@ -10,6 +10,7 @@ import shell_logo from "../assets/images/shell_logo.png";
 import dns_logo from "../assets/images/dns_logo.png";
 import line_follower_logo from "../assets/images/line_follower.jpeg";
 import _3dswim_logo from "../assets/images/3dswim_logo.jpeg";
+import sess_logo from "../assets/images/sess_logo.png";
 
 import { Project } from "./";
 
@@ -83,6 +84,17 @@ const projects = [
       "Programmed and debugged the robots and its components run on C/C++ using ROBOTC and Ubuntu 22.04",
       "Reduced server and robot communication latency from 55 ms to 30 ms by using UDP protocol",
       "Documented educational content and tutorials in GitHub, assisting colleagues interested in robotics and AI",
+    ],
+  },
+  {
+    logo: sess_logo,
+    title: "SESS website",
+    link: "https://www.senecaengsoc.ca/home",
+    description: [
+      "Collaborated with a team of 4 executive members to implement a web page for our engineering club",
+      "Built a friendly UI for the event and contact pages for the website",
+      "Implemented routes using React Router v6.4 for smooth navigation",
+      "Design and developed the web pages using React, HTML, CSS, and Figma",
     ],
   },
   {

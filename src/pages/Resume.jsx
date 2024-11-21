@@ -90,11 +90,11 @@ function Resume() {
               <li>HTML</li>
               <li>CSS</li>
               <li>JavaScript</li>
-              <li>C/C++</li>
+              {/* <li>C/C++</li>
               <li>Python</li>
               <li>HTML</li>
               <li>CSS</li>
-              <li>JavaScript</li>
+              <li>JavaScript</li> */}
             </ul>
           </div>
         </div>
@@ -111,11 +111,11 @@ function Resume() {
               <li>Express.js</li>
               <li>MongoDB</li>
               <li>Auth0</li>
-              <li>React.js</li>
+              {/* <li>React.js</li>
               <li>Node.js</li>
               <li>Express.js</li>
               <li>MongoDB</li>
-              <li>Auth0</li>
+              <li>Auth0</li> */}
             </ul>
           </div>
         </div>

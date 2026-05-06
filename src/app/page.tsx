@@ -245,8 +245,8 @@ export default function Home() {
         <section id="experience" className="section-shell py-18 scroll-mt-28">
           <SectionIntro
             eyebrow="Experience"
-            title="Recent work in AI automation, internal platforms, and test systems."
-            description="I have been spending most of my time building tools that support engineers and operators: browser automation, observability dashboards, testing platforms, and internal APIs."
+            title="Recent work in AI automation, firmware test systems, and internal platforms."
+            description="Most of my recent work has been around AI-assisted workflows: browser automation, firmware test generation, observability, and internal tools that help engineers and operators move faster."
           />
 
           <div className="mt-10 grid gap-6 lg:grid-cols-2">
@@ -302,8 +302,8 @@ export default function Home() {
         <section id="projects" className="section-shell py-18 scroll-mt-28">
           <SectionIntro
             eyebrow="Featured builds"
-            title="Selected projects with product range and systems depth."
-            description="These are the projects that best represent how I think: shipping usable products while still caring about architecture, deployment, observability, and operational detail."
+            title="Selected projects across AI products, backend systems, and infrastructure labs."
+            description="These are the builds that best represent how I work: shipping usable software while still caring about architecture, deployment, observability, and operational detail."
           />
 
           <div className="mt-10 space-y-8">
@@ -402,8 +402,8 @@ export default function Home() {
           <div className="mt-14">
             <SectionIntro
               eyebrow="More from the resume"
-              title="Additional projects across networking, compilers, and systems programming."
-              description="These projects are also on the resume and round out the backend, networking, and lower-level systems side of my work."
+              title="More systems work from the resume: compilers, protocol servers, and lower-level networking."
+              description="These projects round out the lower-level side of my work and show the same pattern as the main portfolio pieces: building from first principles and learning by shipping." 
             />
 
             <div className="mt-8 grid gap-6 lg:grid-cols-2">
@@ -461,8 +461,8 @@ export default function Home() {
         <section id="skills" className="section-shell py-18 scroll-mt-28">
           <SectionIntro
             eyebrow="Technical focus"
-            title="The areas I keep coming back to."
-            description="The portfolio is broad, but the center of gravity is consistent: infrastructure-aware engineering, agent workflows, and tools that other people can rely on."
+            title="The skills that keep showing up across the resume."
+            description="Across research, internship work, and personal projects, the pattern is consistent: Linux-heavy infrastructure, AI automation, backend services, observability, and tools that other people can rely on."
           />
 
           <div className="mt-10 grid gap-6 lg:grid-cols-3">
@@ -569,9 +569,9 @@ export default function Home() {
                 Building something useful? Let&apos;s talk.
               </h2>
               <p className="mt-4 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">
-                I am interested in new grad roles and engineering work across
-                AI systems, backend platforms, developer tooling, and
-                infrastructure-aware product engineering.
+                I am interested in new grad engineering roles across AI
+                systems, backend and platform engineering, developer tooling,
+                and infrastructure automation.
               </p>
             </div>
 

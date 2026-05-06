@@ -78,7 +78,7 @@ export const hero = {
   eyebrow: "backend platforms, AI systems, and infrastructure-aware engineering",
   title: "I build automation that helps teams grow.",
   description:
-    "I am a Software Engineering student at Seneca Polytechnic focused on backend and platform development across cloud and on-prem environments. RHCE, RHCSA, CKAD, and Terraform Associate certified; hands-on with Linux, Kubernetes, AWS, Proxmox, Docker, and GitHub Actions. I like building reliable services, automating infrastructure, and solving problems across the systems stack.",
+    "I am a Software Engineering student at Seneca Polytechnic focused on networking, servers, and backend platform development across cloud and on-prem environments. RHCE, RHCSA, CKAD, and Terraform Associate certified; hands-on with Linux, RHEL, Kubernetes, AWS, Proxmox, Docker, Jenkins, and GitHub Actions. I like building reliable services, automating infrastructure, and shipping AI-assisted systems with strong observability.",
   ctas: [
     { label: "View Projects", href: "#projects" },
     { label: "Download Resume", href: "/resume.pdf" },
@@ -90,7 +90,7 @@ export const highlightStats: HighlightStat[] = [
   { label: "Current role", value: "Research Assistant" },
   { label: "Recent role", value: "AI Engineer Intern" },
   { label: "Certifications", value: "4" },
-  { label: "Featured builds", value: "5" },
+  { label: "Resume projects", value: "8" },
 ];
 
 export const certifications: Certification[] = [
@@ -188,9 +188,9 @@ export const featuredProjects: Project[] = [
     summary:
       "A solo interview-practice platform that combines a coding workspace with an AI voice interviewer.",
     bullets: [
-      "Built a LeetCode-style problem workspace with editor, execution output, timers, and settings.",
-      "Integrated an AI voice interviewer with OpenAI Realtime for structured mock interview flow.",
-      "Connected authentication and code execution services and deployed the web app to Vercel.",
+      "Built a solo LeetCode-style interview practice platform with an in-browser problem workspace, Python editor, execution output, timers, and settings.",
+      "Integrated an AI voice interviewer using OpenAI Realtime to guide users through a structured interview flow covering approach, implementation, testing, and complexity review.",
+      "Implemented authentication with Auth0 and connected client-side code execution via Judge0, deploying the web app to Vercel with GitHub-based deployments.",
     ],
     stack: [
       "TypeScript",
@@ -210,11 +210,11 @@ export const featuredProjects: Project[] = [
     href: "https://npm-runaway-git-main-ma-toan-bachs-projects.vercel.app/",
     github: "https://github.com/matoanbach/npm-runaway",
     summary:
-      "A hackathon MVP for food-industry analytics, inventory visibility, and operational dashboards.",
+      "A hackathon prototype for food-industry analytics, inventory visibility, and operational dashboards.",
     bullets: [
-      "Led the MVP front end for company and supplier views, KPI dashboards, and report workflows.",
-      "Designed a UI for certification workflows, sales insights, and near-expiry alert scenarios.",
-      "Set up CI/CD to build, ship, and deploy containers to AWS ECR and EKS.",
+      "Collaborated in a 5-person hackathon team to prototype a food-industry analytics plus POS dashboard for inventory, sales trends, and near-expiry alert workflows.",
+      "Led the MVP front end in Next.js and React, shipping company vs. supplier views, KPI dashboards, certification workflow UI, and PDF report generation.",
+      "Implemented CI/CD with GitHub Actions to build and push Docker images to AWS ECR and deploy the container to Amazon EKS with Kubernetes manifests and ingress.",
     ],
     stack: [
       "TypeScript",
@@ -230,95 +230,78 @@ export const featuredProjects: Project[] = [
   },
   {
     slug: "homelab-cluster",
-    name: "Homelab Cluster",
+    name: "Homelab",
     github: "https://github.com/matoanbach/homelab",
     summary:
-      "A personal Linux and Kubernetes lab for hands-on systems administration and automation practice.",
+      "A Proxmox-based homelab for repeatable build-break-fix practice across Linux, networking, containers, and cluster operations.",
     bullets: [
-      "Maintained a 3-node RHEL cluster on Proxmox for Linux administration and infrastructure experiments.",
-      "Practiced storage, systemd, SELinux, SSH, firewalld, networking, and user permission workflows.",
-      "Explored Kubernetes cluster setup on Proxmox using Kubespray.",
+      "Built and maintained a personal Proxmox-based homelab with 64GB RAM and dual Xeon E5-2660 v3 CPUs to practice infrastructure, systems, and automation through repeatable build-break-fix cycles.",
+      "Provisioned and rebuilt Linux VMs to practice Red Hat-style administration and troubleshooting across users and permissions, systemd services, storage, filesystems, SSH, and DNS and network fundamentals.",
+      "Planned and documented a compact OpenShift-on-Proxmox deployment using the agent-based installer, including static IP and DNS mapping plus Terraform-driven provisioning workflows.",
+      "Explored Kubernetes cluster operations and CI/CD experiments with Jenkins, capturing configs and lessons learned as a reusable knowledge base.",
     ],
-    stack: ["RHEL", "Proxmox", "Linux", "Kubernetes", "Kubespray", "Bash"],
+    stack: ["Proxmox", "RHEL", "Networking", "Terraform", "Ansible", "Kubernetes", "OpenShift", "Jenkins"],
     accent: "bg-[#c1b5ff]",
   },
   {
     slug: "very-simple-bank",
-    name: "Very Simple Bank",
+    name: "simple-bank",
     github: "https://github.com/matoanbach/simple-bank",
     summary:
-      "A backend banking system built to exercise API design, testing, and cloud-native deployment.",
+      "A Go backend project that simulates core banking workflows with authentication, transactions, and CI-backed database testing.",
     bullets: [
-      "Implemented account, auth, and transaction APIs using Go, Gin, and gRPC.",
-      "Wrote unit tests to cover 57.1% of the codebase and wired CI/CD with GitHub Actions.",
-      "Built, tagged, and pushed backend images to Amazon ECR and deployed them to Amazon EKS.",
+      "Built a Go and Gin REST API simulating core banking workflows including user registration and login, account management, and money transfers, backed by PostgreSQL.",
+      "Implemented secure authentication with bcrypt password hashing, JWT middleware, session records, and account-ownership checks for protected resources.",
+      "Designed transactional transfer logic that records transfers and accounting entries and updates balances atomically, including stable ordering to reduce deadlock risk under concurrent transfers.",
+      "Added database-backed automated tests and GitHub Actions CI that starts PostgreSQL, runs migrations, and executes the test suite on every push.",
     ],
-    stack: [
-      "Go",
-      "Gin",
-      "gRPC",
-      "PostgreSQL",
-      "Docker",
-      "Kubernetes",
-      "GitHub Actions",
-      "AWS",
-    ],
+    stack: ["Go", "Gin", "PostgreSQL", "sqlc", "JWT", "Docker", "GitHub Actions"],
     accent: "bg-[#ff9f8b]",
   },
   {
     slug: "job-scraper",
-    name: "Job Scraper",
+    name: "LinkedIn Job Bot",
     github: "https://github.com/matoanbach/not/tree/main/LinkedIn%20Bot",
     summary:
-      "An automated internship scraper that combines browser automation, AI filtering, and distribution.",
+      "A LinkedIn job monitoring bot that combines browser automation, AI filtering, storage, and Discord distribution.",
     bullets: [
-      "Scraped dynamic LinkedIn listings daily with Playwright and Node.js.",
-      "Used ChatGPT APIs to categorize and filter postings for relevance.",
-      "Deduplicated postings in DynamoDB and broadcasted results to Discord for 144 students.",
+      "Built a LinkedIn job monitoring bot that scrapes new internship and co-op postings and delivers shortlisted roles to Discord channels for student job hunting.",
+      "Automated LinkedIn login and UI-based job filtering with Node.js and Playwright, extracting job title, company, location, and apply URLs from dynamic pages.",
+      "Applied OpenAI-based validation to filter for CS-related internship and co-op roles in English before publishing to Discord.",
+      "Implemented deduplication with DynamoDB using a 14-day TTL to suppress repeats and broadcasted approved jobs to two Discord channels serving 144 students.",
     ],
-    stack: ["JavaScript", "Node.js", "Playwright", "OpenAI APIs", "DynamoDB", "Discord"],
+    stack: ["JavaScript", "Node.js", "Playwright", "OpenAI API", "DynamoDB", "Express", "Discord Webhooks"],
     accent: "bg-[#f8a6e0]",
   },
 ];
 
 export const otherProjects: Project[] = [
   {
-    slug: "seneca-networking-lab",
-    name: "Seneca Networking Lab",
-    github: "https://github.com/matoanbach/networking",
-    summary:
-      "Configured small computer networks with routers, switches, IPv4/IPv6 addressing, and basic device security.",
-    bullets: [
-      "Set up PCs, switches, and routers and verified communication with ping and show commands.",
-      "Configured passwords, banners, and end-to-end IPv4 and IPv6 connectivity.",
-    ],
-    stack: ["Cisco IOS CLI", "IPv4/IPv6", "Cisco Catalyst", "Packet Tracer"],
-    accent: "bg-[#fff7d1]",
-  },
-  {
     slug: "compiler-in-go",
-    name: "Compiler in Go",
+    name: "turtle programming language (Go)",
     github: "https://github.com/matoanbach/go-compiler",
     summary:
-      "Built a bytecode compiler and stack-based virtual machine in Go following Writing A Compiler In Go.",
+      "A small programming language in Go with both an interpreter-style evaluator and a bytecode VM.",
     bullets: [
-      "Transformed an interpreter into a VM capable of executing compiled code with a 3x speed-up.",
-      "Implemented bytecode instructions, symbol tables, a constant pool, jumps, functions, built-ins, and closures.",
+      "Implemented a small programming language in Go, including a lexer, Pratt parser, AST, runtime object system, and built-in functions.",
+      "Built two execution engines: a tree-walking evaluator for interpreting the AST and a bytecode compiler that lowers AST nodes into instructions for a stack-based virtual machine.",
+      "Implemented VM features including globals, call frames, closures with free-variable capture, and symbol resolution across global, local, and builtin scopes, with unit tests across parser, compiler, and VM behavior.",
     ],
     stack: ["Go", "Compiler", "Virtual Machine", "GitHub Actions"],
     accent: "bg-[#daf7f0]",
   },
   {
     slug: "http-server",
-    name: "HTTP Server",
+    name: "HTTP/1.1 Server",
     github: "https://github.com/matoanbach/http-server",
     summary:
-      "A multithreaded C++ HTTP server handling GET/POST, static files, and gzip-compressed content.",
+      "A lightweight HTTP/1.1 server in C++ built to practice sockets, request parsing, routing, and concurrency.",
     bullets: [
-      "Implemented routing and concurrent request handling using C++ and CMake.",
-      "Served static resources and optimized throughput with multithreading.",
+      "Built a lightweight HTTP/1.1 server from scratch in C++23 using TCP sockets, implementing request parsing, response construction, and routing for GET and POST endpoints.",
+      "Implemented basic file upload and download support using a configurable storage directory and appropriate success and error responses.",
+      "Added response compression and multi-client request handling to improve performance and scalability under concurrent traffic.",
     ],
-    stack: ["C++", "TCP", "HTTP", "Multithreading", "CMake"],
+    stack: ["C++23", "POSIX Sockets", "pthreads", "zlib", "CMake", "vcpkg"],
     accent: "bg-[#c1b5ff]",
   },
   {
@@ -326,12 +309,13 @@ export const otherProjects: Project[] = [
     name: "DNS Server",
     github: "https://github.com/matoanbach/dns-server/tree/main",
     summary:
-      "A C++ DNS server that parses and responds to basic UDP queries on a Unix-based system.",
+      "A lightweight DNS server in C++ for learning UDP protocol handling, binary parsing, and message serialization.",
     bullets: [
-      "Implemented custom packet parsing and domain name compression per RFC 1035.",
-      "Tested responses with dig and returned a default IP address for verification.",
+      "Built a lightweight DNS server in C++ that receives and responds to queries over UDP, implementing binary message parsing and serialization for DNS headers, questions, and answers.",
+      "Implemented domain-name encoding and support for compressed names using pointer-based labels to correctly parse real DNS packets and construct valid responses.",
+      "Enabled the server to forward queries to a public DNS provider and return the resolved results, validating end-to-end behavior using dig.",
     ],
-    stack: ["C++", "UDP", "DNS", "RFC 1035", "CMake"],
+    stack: ["C++23", "UDP Sockets", "DNS", "CMake"],
     accent: "bg-[#f8a6e0]",
   },
 ];
@@ -343,12 +327,13 @@ export const roles: Role[] = [
     period: "May 2025 - Present",
     location: "Toronto, ON",
     summary:
-      "Building AI-assisted firmware testing systems with strong observability, concurrency controls, and internal platform integration.",
+      "Building AI-assisted firmware test systems with internal tooling, observability, concurrency controls, and close collaboration with platform teams.",
     bullets: [
       "Designed and deployed an automated firmware unit-test generation workflow using Python, LangChain/LangGraph, and FastMCP, cutting manual setup time by 90%.",
-      "Architected and containerized a microservices FastMCP server exposing 12+ test tools for parallel and sandboxed test runs.",
+      "Architected and containerized a microservices test-generation FastMCP server to expose 12+ test tools via an internal API platform, enabling parallel and sandboxed test runs with robust concurrency controls.",
       "Implemented a RAG pipeline over 4,000+ code symbols and knowledge-base records, boosting coverage from 84% to 99% while reducing token usage by about 32%.",
-      "Integrated observability with OpenTelemetry, Grafana, Tempo, and Loki to improve debugging and reproducibility.",
+      "Integrated end-to-end observability with OpenTelemetry, Grafana, Tempo, and Loki, decreasing debugging time by 30% and improving reproducibility.",
+      "Partnered with AMD firmware engineering teams to refine prompts, guardrails, and platform features, improving AI-generated test quality and driving adoption across the organization.",
     ],
     stack: ["Python", "FastMCP", "LangChain", "LangGraph", "OpenTelemetry", "Grafana", "Tempo", "Loki"],
   },
@@ -358,14 +343,15 @@ export const roles: Role[] = [
     period: "December 2025 - April 2026",
     location: "Toronto, ON",
     summary:
-      "Built AI automation tooling for browser workflows, internal observability, and agent-accessible database platforms.",
+      "Built AI automation tooling for browser workflows, internal observability, and agent-accessible data platforms in production-adjacent environments.",
     bullets: [
-      "Built an AI browser automation system to extract information from third-party portals using Playwright, TypeScript, OpenCode SDK, Jenkins, and Docker, reducing manual coding time by 96%.",
-      "Assisted in testing AI automation workflows for ticket processing in OTRS using the Google Agent Development Toolkit and Python.",
-      "Built a Django-based observability dashboard to support debugging and testing of AI automation workflows.",
-      "Architected and maintained a FastMCP server platform exposing MySQL, PostgreSQL, and SQLite tools for AI agents.",
+      "Built an AI browser automation system to extract and capture information from third-party portals using Playwright, TypeScript, OpenCode SDK with sandboxed execution, Jenkins CI/CD, and Docker for containerization, reducing manual coding time by 96%.",
+      "Assisted in testing AI automation workflows for ticket processing in the production OTRS system using the Google Agent Development Toolkit and Python.",
+      "Built a Django-based observability dashboard to support debugging and testing of AI automation workflows and collaborated with ITSM, DevOps teams, and stakeholders to gather feedback and align with project requirements.",
+      "Architected and maintained a FastMCP server platform that exposed database tools across MySQL, PostgreSQL, and SQLite for AI agents to query client information.",
+      "Integrated and configured Langfuse, Grafana, Prometheus, and OpenTelemetry to monitor LLM agent workflows and MCP server metrics, tracking cost, latency, token usage, and error rates to improve reliability and speed up troubleshooting.",
     ],
-    stack: ["TypeScript", "Playwright", "Django", "FastMCP", "Docker", "Jenkins", "Google ADK", "Langfuse"],
+    stack: ["TypeScript", "Playwright", "Django", "FastMCP", "Docker", "Jenkins", "Google ADK", "Langfuse", "Grafana", "OpenTelemetry"],
   },
 ];
 
@@ -406,6 +392,7 @@ export const skillGroups: SkillGroup[] = [
       "Proxmox",
       "Bash",
       "Docker",
+      "Podman",
       "Kubernetes",
       "Ansible",
       "Terraform",

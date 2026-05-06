@@ -1,0 +1,380 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://GitHub.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Ma Toan Bach} \\ \vspace{1pt}
+    \small \href{bachmatoan2910@gmail.com}{\underline{bachmatoan2910@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/ma-toan-bach-59b090265/}{\underline{linkedin.com/in/matoanbach}} $|$
+    \href{https://GitHub.com/matoanbach}{\underline{github.com/matoanbach}} $|$
+    \href{mbach@myseneca.ca}{\underline{mbach@myseneca.ca}}
+\end{center}
+
+% \section{Summary}
+%     \resumeSubHeadingListStart
+%         % \resumeSubheading
+%         \item  Software Engineering student (BEng, Seneca) focused on networking, servers, and backend/platform development across cloud and on-prem environments. RHCSA and CKAD certified; strong with Linux (RHEL/Ubuntu), Kubernetes, AWS, Proxmox/VMware, Ansible, Podman, Docker, and GitHub Actions. Experience includes automating test pipelines for AMD OpenSIL, building Go/Python APIs with PostgreSQL, and troubleshooting systems and networks with Wireshark/tcpdump. Seeking roles where I can build reliable services, automate infrastructure, and solve problems across the network–systems stack.
+%     \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Seneca Polytechnic}{Toronto, ON}
+      {Bachelor of Engineering in Software Engineering}{Sept 2022 -- August 2026}
+      % \resumeItem{Relevant Coursework: Object-Oriented Programming, Operating Systems, Design Patterns, Data Structures and Algorithms, Database Design Principles}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    % \resumeSubheading
+    %   {\textbf{\href{https://www.canadarobotix.com/}}{Canada Robotix}}{March 2024 -- July 2024}
+    %   {Engineering Trainee $|$ \emph{Linux, C++, Arduino, Wireshark, tcpdump }}{Toronto, ON}
+    %   \resumeItemListStart
+    %     \resumeItem{Collaborated with a research team to engineer a CNC machine printer to visualize invisible waves in 3D by using a \textbf{Delta 3D printer}, \textbf{MainsailOS}, \textbf{Klipper}, \textbf{Raspberry Pi 3} and \textbf{Arduino Uno R3}}
+    %     \resumeItem{Developed an Arduino program to collect and process real-time ultrasonic data as analog values, converting to digital values for further analysis.}
+    %     \resumeItem{Visualized the ultrasonic waves in real-time using \textbf{Matplotlib} and \textbf{NumPy} to generate a dynamic polar plots.}
+    %     \resumeItem{Established wired and wireless connections between devices and hardware modules by using serial ports and \textbf{Moonraker APIs} via WiFi network.}
+    %     \resumeItem{}
+      
+    %     \resumeItem{Published instructions for 6 electronics projects using \textbf{ESP32}, \textbf{IMU}, \textbf{HX711}, and \textbf{TFT SPI LCD} modules, providing clear code explanations and documentation.}
+    %     \resumeItem{Developed \textbf{C++} firmware for multi-threaded sensor data collection, using \textbf{UDP} over Wi-Fi to communicate between multiple ESP32 boards and computers.}
+    %     \resumeItem{Optimized and debugged firmware with \textbf{Arduino IDE}, \textbf{Wireshark}, \textbf{tcpdump}, and \textbf{Ubuntu 22.04}.}
+    %     \resumeItem{Generated \textbf{300 CAD} in revenue by selling \textbf{4} custom ESP32 Starter Kits.}
+    %   \resumeItemListEnd
+    
+    \resumeSubheading
+        {Research Assistant}{May 2025 -- Present}
+        {Seneca Applied Research}{Toronto, ON}
+        \resumeItemListStart
+        \resumeItem{Designed and deployed an automated firmware unit‑test generation workflow using Python, LangChain/LangGraph and FastMCP, cutting manual setup time by 90\%.}
+        \resumeItem{Architected and containerized a microservices test‑generation FastMCP server to expose 12+ test tools via an internal API platform, enabling parallel and sandboxed test runs with robust concurrency controls.}
+        \resumeItem{Implemented a RAG pipeline and a parser that indexed over 4{,}000 code symbols and knowledge‑base records, boosting unit‑test coverage from 84\% to 99\% while reducing token usage by about 32\%.}
+        \resumeItem{Integrated end-to-end observability with OpenTelemetry, Grafana, Tempo and Loki, decreasing debugging time by 30\% and improving reproducibility.}
+        \resumeItem{Partnered with AMD firmware engineering teams to refine prompts, guardrails and platform features, improving AI‑generated test quality and driving adoption across the organization.}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+        {AI Engineer Intern}{December 2025 -- April 2026} 
+        {Pathway Communications}{Toronto, ON}
+        \resumeItemListStart
+        \resumeItem{Built an AI browser automation system to extract and capture information from third-party portals using Playwright, Typescript, OpenCode SDK with sandboxed execution, Jenkins CI/CD and Docker for containerization, reducing manual coding time by 96\%.}
+        \resumeItem{Assisted in testing AI automation workflows for ticket processing in production OTRS system using the Google Agent Development Toolkit and Python.}
+        \resumeItem{Built a Django-based observability dashboard to support debugging and testing of AI automation workflows; collaborated with ITSM, DevOps teams and stakeholders to gather feedback, ensuring alignment with project requirements and goals.}
+        \resumeItem{Architected and maintained a FastMCP server platform that exposed database tools across MySQL, PostgreSQL and SQLite for AI agents to query client information.}
+        \resumeItem{Integrated and configured Langfuse, Grafana, Prometheus and OpenTelemetry to monitor LLM agent workflows and MCP server metrics to track cost, latency, token usage and error rates, improving reliability and speeding up troubleshooting.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+      
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+   \resumeProjectHeading
+    {{Certified Kubernetes Application Developer (CKAD)}}{\small Issued: 2025-01 \;|\; \href{https://www.credly.com/badges/3dda89d7-d510-4cab-aebd-1a01108d7c1f/public_url}{Verify}}
+  \resumeProjectHeading
+    {{HashiCorp Certified: Terraform Associate (003)}}{\small Issued: 2025-10 \;|\; \href{https://www.credly.com/badges/7eef31ef-9f6e-4aa3-a16d-429c60e54df8/public_url}{Verify}}
+  \resumeProjectHeading
+    {{Red Hat Certified System Administrator (RHCSA)}}{\small Issued: 2025-09 \;|\; \href{https://www.credly.com/badges/5261e1d4-1685-4126-a65f-5f236348d99b/public_url}{Verify}}
+   \resumeProjectHeading
+    {{Red Hat Certified Engineer (RHCE)}}{\small Issued: 2026-04 \;|\; \href{https://www.credly.com/badges/fe83c308-e0c2-493b-8035-021d7b9bf8e9/public_url}{Verify}}  
+\resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Go, TypeScript, SQL} \\
+     \textbf{DevOps}{: Linux, RHEL, Proxmox, Bash, Docker, Kubernetes, Ansible, Terraform, GitHub Actions, Jenkins} \\
+     \textbf{Observability}{: Langsmith, Langfuse, Grafana, Prometheus} \\
+     \textbf{Cloud}{: AWS (EC2, EKS, ECR, IAM, S3, RDS)} \\
+     % \textbf{Networking}{: Networking: IPv4/IPv6, TCP/UDP, DNS/HTTP fundamentals, Wireshark, tcpdump, SSH, firewalld} \\
+     \textbf{Full-stack}{: FastAPI, FastMCP, OpenAPI, REST API, gRPC, Gin, React, Tailwind CSS, HTML} \\
+     \textbf{Databases/AI}{: LangChain/LangGraph, Google ADK, ChromaDB, PostgreSQL, MongoDB, DynamoDB, OpenAI models} \\
+    }}
+ \end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+        {\textbf{\href{https://npm-runaway-git-main-ma-toan-bachs-projects.vercel.app/}{datatrace}} $|$ \emph{TypeScript, React, Next.js, AWS (EKS/ECR), Docker, Kubernetes, GitHub Actions}}{\emph{\href{https://npm-runaway-git-main-ma-toan-bachs-projects.vercel.app/}{Link}, \href{https://github.com/matoanbach/npm-runaway}{GitHub}}}
+        \resumeItemListStart
+          \resumeItem{Collaborated in a 5-person hackathon team to prototype a food-industry analytics + POS dashboard for inventory, sales trends, and near-expiry alert workflows.}
+          \resumeItem{Led the MVP front end in Next.js/React, shipping company vs. supplier views, KPI dashboards, certification workflow UI, and PDF report generation.}
+          \resumeItem{Implemented CI/CD with GitHub Actions to build and push Docker images to AWS ECR and deploy the container to Amazon EKS with Kubernetes manifests and ingress.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{\href{https://www.leetyap.com/}{leetyap.com}} $|$ \emph{TypeScript, React, Next.js, Redux Toolkit, Tailwind CSS, Auth0, CodeMirror, OpenAI Realtime}}{\emph{\href{https://leetyap.com}{Link}, \href{https://GitHub.com/matoanbach/leetyap}{GitHub}}}
+        \resumeItemListStart
+          \resumeItem{Built a solo LeetCode-style interview practice platform with an in-browser problem workspace (problem view, Python editor, and execution output) plus timers and settings.}
+          \resumeItem{Integrated an AI voice interviewer using OpenAI Realtime to guide users through a structured interview flow (approach, implementation, testing, and complexity review).}
+          \resumeItem{Implemented authentication with Auth0 and connected client-side code execution via Judge0, deploying the web app to Vercel with GitHub-based deployments.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{\href{https://GitHub.com/matoanbach/homelab}{Homelab}} $|$ \emph{Proxmox, RHEL, Networking, Terraform, Ansible, Kubernetes, OpenShift, Jenkins}}{\emph{\href{https://GitHub.com/matoanbach/homelab}{GitHub}}}
+        \resumeItemListStart
+          \resumeItem{Built and maintained a personal Proxmox-based homelab (64GB RAM, dual Xeon E5-2660 v3) to practice infrastructure, systems, and automation through repeatable build–break–fix cycles.}
+          \resumeItem{Provisioned and rebuilt Linux VMs to practice Red Hat/RHCSA-style administration and troubleshooting (users/permissions, systemd services, storage/filesystems, SSH, and DNS/network fundamentals).}
+          \resumeItem{Planned and documented a compact OpenShift-on-Proxmox deployment using the agent-based installer, including static IP/DNS mapping and Terraform-driven provisioning workflows.}
+          \resumeItem{Explored Kubernetes cluster operations (Kubespray, Helm) and CI/CD experiments with Jenkins, capturing configs and lessons learned as a reusable knowledge base.}
+        \resumeItemListEnd
+                    
+        \resumeProjectHeading
+        {\textbf{\href{https://GitHub.com/matoanbach/simple-bank}{simple-bank}} $|$ \emph{Go, Gin, PostgreSQL, sqlc, JWT, Docker, GitHub Actions}}{\emph{\href{https://GitHub.com/matoanbach/simple-bank}{GitHub}}}
+        \resumeItemListStart
+          \resumeItem{Built a Go (Gin) REST API simulating core banking workflows—user registration/login, account management, and money transfers—backed by PostgreSQL.}
+          \resumeItem{Implemented secure authentication with bcrypt password hashing, JWT middleware, session records, and account-ownership checks for protected resources.}
+          \resumeItem{Designed transactional transfer logic that records transfers and accounting entries and updates balances atomically, including stable ordering to reduce deadlock risk under concurrent transfers.}
+          \resumeItem{Added database-backed automated tests and GitHub Actions CI that starts PostgreSQL, runs migrations, and executes the test suite on every push.}
+        \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{\href{https://GitHub.com/matoanbach/not/tree/main/LinkedIn\%20Bot}{LinkedIn Job Bot}} $|$ \emph{JavaScript, Node.js, Playwright, OpenAI API, DynamoDB, Express, Discord Webhooks}}{\emph{\href{https://GitHub.com/matoanbach/not/tree/main/LinkedIn\%20Bot}{GitHub}}}
+        \resumeItemListStart
+          \resumeItem{Built a LinkedIn job monitoring bot that scrapes new internship/co-op postings and delivers shortlisted roles to Discord channels for student job hunting.}
+          \resumeItem{Automated LinkedIn login and UI-based job filtering with Node.js + Playwright, extracting job title, company, location, and apply URLs from dynamic pages.}
+          \resumeItem{Applied OpenAI-based validation to filter for CS-related internship/co-op roles in English before publishing to Discord.}
+          \resumeItem{Implemented deduplication with DynamoDB using a 14-day TTL to suppress repeats and broadcasted approved jobs to two Discord channels serving 144 students.}
+        \resumeItemListEnd
+        
+        % \resumeProjectHeading
+        % {\textbf{\href{https://github.com/matoanbach/networking}{Seneca Networking Lab}} $|$ \emph{Cisco IOS CLI, IPv4/IPv6, Cisco Catalyst 2960 and 4221, Packet Tracer}}{\emph{\href{https://github.com/matoanbach/networking}{GitHub}}}
+        %     \resumeItemListStart
+        %         \resumeItem{Set up and tested small computer networks by connecting switches and PCs, assigning IP addresses, and verifying communication with ping and show commands.}
+        %         \resumeItem{Configured routers and switches with basic security (passwords, banners) and enabled both IPv4 and IPv6 connectivity to ensure devices communicated end-to-end.}
+        %     \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{\href{https://GitHub.com/matoanbach/go-compiler}{turtle programming language (Go)}} $|$ \emph{Go, GitHub Actions}}
+          {\emph{\href{https://GitHub.com/matoanbach/go-compiler}{GitHub}}}
+        \resumeItemListStart
+          \resumeItem{Implemented a small programming language in Go, including a lexer, Pratt parser, AST, runtime object system, and built-in functions.}
+          \resumeItem{Built two execution engines: a tree-walking evaluator for interpreting the AST and a bytecode compiler that lowers AST nodes into instructions for a stack-based virtual machine.}
+          \resumeItem{Implemented VM features including globals, call frames, closures with free-variable capture, and symbol resolution across global/local/builtin scopes, with unit tests across parser, compiler, and VM behavior.}
+        \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{\href{https://GitHub.com/matoanbach/http-server/}{HTTP/1.1 Server}} $|$ \emph{C++23, POSIX Sockets, pthreads, zlib, CMake, vcpkg}}{\emph{\href{https://GitHub.com/matoanbach/http-server}{GitHub}}}
+        \resumeItemListStart
+          \resumeItem{Built a lightweight HTTP/1.1 server from scratch in C++23 using TCP sockets, implementing request parsing, response construction, and routing for GET/POST endpoints.}
+        \resumeItem{Implemented basic file upload and download support, using a configurable storage directory and appropriate success/error responses.}
+        \resumeItem{Added response compression and multi-client request handling to improve performance and scalability under concurrent traffic.}
+        \resumeItemListEnd
+
+    
+        \resumeProjectHeading
+        {\textbf{\href{https://GitHub.com/matoanbach/dns-server/tree/main}{DNS Server}} $|$ \emph{C++23, UDP Sockets, DNS, CMake}}{\emph{\href{https://GitHub.com/matoanbach/dns-server/tree/main}{GitHub}}}
+        \resumeItemListStart
+          \resumeItem{Built a lightweight DNS server in C++ that receives and responds to queries over UDP, implementing binary message parsing and serialization for DNS headers, questions, and answers.}
+          \resumeItem{Implemented domain-name encoding and support for compressed names (pointer-based labels) to correctly parse real DNS packets and construct valid responses.}
+          \resumeItem{Enabled the server to forward queries to a public DNS provider and return the resolved results, validating end-to-end behavior using \texttt{dig}.}
+        \resumeItemListEnd
+
+    
+    % \resumeProjectHeading
+    %     {\textbf{\href{https://GitHub.com/matoanbach/shell}{Shell}} $|$ \emph{C++, Shell, CMake}}{\emph{\href{https://GitHub.com/matoanbach/shell}{GitHub}}}
+    %         \resumeItemListStart  
+    %         \resumeItem{Developed a basic Unix-like shell featuring a REPL for user input, command parsing, and output handling.}
+    %         \resumeItem{Implemented essential built-in commands (\texttt{exit}, \texttt{echo}, \texttt{type}, \texttt{pwd}, \texttt{cd}), ensuring correct interpretation and execution.}
+
+    %     \resumeItemListEnd
+        
+    % \resumeProjectHeading
+    %     {\textbf{\href{https://GitHub.com/matoanbach/3d-swim}{3D S.W.I.M}} $|$ \emph{C++, Python, NumPy, Matplotlib, Linux}}{\emph{\href{https://GitHub.com/matoanbach/3d-swim}{GitHub}}}
+    %         \resumeItemListStart  
+    %         \resumeItem{Collaborated with the research team to engineer a CNC machine printer to visualize invisible waves in 3D by using a \textbf{Delta 3D printer}, \textbf{MainsailOS}, \textbf{Klipper}, \textbf{Raspberry Pi 3} and \textbf{Arduino Uno R3}}
+    %         \resumeItem{Developed an Arduino program to collect and process real-time ultrasonic data as analog values, converting to digital values for further analysis}
+    %         \resumeItem{Visualized the ultrasonic waves in real-time using \textbf{Matplotlib} and \textbf{NumPy} to generate a dynamic polar plots}
+    %         \resumeItem{Established wired and wireless connections between devices and hardware modules by using serial ports and \textbf{Moonraker APIs} via WiFi network}
+    %     \resumeItemListEnd
+
+    % \resumeProjectHeading
+    %     {\textbf{\href{https://GitHub.com/matoanbach/SEH500_assignment}{Rotation Visualizer}} $|$ \emph{C, NXP FRDM-K66F, ARM assembly, Python, MCUXpresso IDE}}{\emph{\href{https://GitHub.com/matoanbach/SEH500_assignment}{GitHub}}}
+    %         \resumeItemListStart  
+    %             \resumeItem{Developed an embedded system to sense rotation and tilt angles using accelerometer and magnetometer data on the NXP FRDM-K66F (ARM Cortex-M4).}
+    %             \resumeItem{Implemented real-time data collection in \textbf{C and ARM Assembly} and transmitted sensor readings via serial to a Python application for 3D visualization.}
+    %             \resumeItemListEnd
+
+    % \resumeProjectHeading
+    %     {\textbf{\href{https://GitHub.com/matoanbach/vex-line-follower}{VEX Line Follower}} $|$ \emph{C, ROBOTC}}{\emph{\href{https://GitHub.com/matoanbach/vex-line-follower}{GitHub}}}
+    %         \resumeItemListStart  
+    %         \resumeItem{Designed and developed a line-following robot utilizing the \textbf{VEX Cortex M4} microcontroller, \textbf{C}, and \textbf{ROBOTC}}
+    %         \resumeItem{Implemented and tuned a \textbf{PID} (Proportional-Integral-Derivative) controller algorithm to enhance the precision of robot's movements}
+    %     \resumeItemListEnd
+        
+
+        
+    % \resumeProjectHeading
+    %     {\textbf{\href{https://jobify-me-r6g3.onrender.com}{Jobify clone}} $|$ \emph{HTML, CSS, JavaScript, MongoDB, Express.js, React, Node.js}}{\emph{\href{https://jobify-me-r6g3.onrender.com}{Link}}}
+    %         \resumeItemListStart
+    %         \resumeItem{Developed a \textbf{full-stack web app} enabling users to create, add, and edit job applications to track their job search}
+    %         \resumeItem{Applied \textbf{MERN} stack framework following a model-view-controller (\textbf{MVC}) architecture}
+    %         \resumeItem{Utilized \textbf{JWT} for authentication and authorization and built a \textbf{REST API} to route get, post, put and delete actions}
+    %         \resumeItem{Developed a friendly UI using \textbf{React} with account management, authentication and job statistic}
+    %       \resumeItemListEnd
+
+    %     \resumeProjectHeading
+    %       {\textbf{\href{https://comfy-sloth-me.netlify.app}{Comfy Sloth clone}} $|$ \emph{HTML, CSS, JavaScript, React}}{\emph{\href{https://comfy-sloth-me.netlify.app}{Link}}}
+    %       \resumeItemListStart
+    %         \resumeItem{Developed an \textbf{e-commerce app} for furniture shopping, allowing users to search for furniture based on categories}
+    %         \resumeItem{Implemented a search algorithm and utilized \textbf{Axios} library to fetch furniture data from a \textbf{REST API}}
+    %         \resumeItem{Integrated \textbf{Auth0} API for secure user authentication and \textbf{Stripe API} for seamless payment processing}
+    %         \resumeItem{Designed and developed the front-end using \textbf{React}, \textbf{HTML}, and \textbf{CSS}}
+    %       \resumeItemListEnd
+
+        
+    %     \resumeProjectHeading
+    %       {\textbf{\href{https://GitHub.com/matoanbach/RentSmart}{RentSmart (Smart City Hackathon 2023}} $|$ \emph{HTML, CSS, JavaScript}}{\emph{\href{https://GitHub.com/matoanbach/RentSmart}{GitHub}}}
+    %         \resumeItemListStart
+    %         \resumeItem{Developed the UI for the web app displaying predicted house prices based on various categories}
+    %         \resumeItem{Designed and developed the front-end using \textbf{HTML}, \textbf{CSS}, and \textbf{JavaScript}}
+    %       \resumeItemListEnd
+          
+    %     \resumeProjectHeading
+    %       {\textbf{\href{https://www.senecaengsoc.ca/}{SESS Web page (Seneca Engineering Student Society)}} $|$ \emph{HTML, CSS, JavaScript, React}}{\emph{\href{https://www.senecaengsoc.ca/}{Link}}}
+    %         \resumeItemListStart
+    %         \resumeItem{Collaborated with a team of 4 executive members to implement a web page for our engineering club}
+    %         \resumeItem{Built a friendly UI for the event and contact pages for the website}
+    %         \resumeItem{Implemented routes using \textbf{React Router v6.4} for smooth navigation}
+    %         \resumeItem{Design and developed the web pages using \textbf{React}, \textbf{HTML}, \textbf{CSS}, and \textbf{Figma}}
+    %       \resumeItemListEnd
+
+    %   \resumeProjectHeading
+    %     {\textbf{\href{https://GitHub.com/kliuengineering/Vex24Q2_v4/}{Quacky Robot}} $|$ \emph{HTML, CSS, JavaScript, C++, Arduino, Linux}}{\emph{\href{https://GitHub.com/kliuengineering/Vex24Q2_v4/}{GitHub}}}
+    %       \resumeItemListStart
+    %         \resumeItem{Collaborated with a team of 5 to build a \textbf{gesture-controlled robot} for National Engineering Month 2024, integrating \textbf{ESP32}, \textbf{ARM Cortex} microcontrollers, and computer vision.}
+    %         \resumeItem{Programmed embedded firmware in \textbf{C++} (using \textbf{ROBOTC} and \textbf{Ubuntu 22.04}) to parse incoming angle data and control VEX components accordingly.}
+    %         \resumeItem{Assembled hardware modules (\textbf{ESP32}, \textbf{ARM Cortex}) and authored \textbf{GitHub} documentation, aiding peers in robotics and AI learning.}
+    %       \resumeItemListEnd
+
+
+
+    % \resumeProjectHeading
+    %     {\textbf{\href{https://GitHub.com/matoanbach/RSS-aggregator}{RSS-Aggregator}} $|$ \emph{Go, SQL, chi, PostgreSQL}}{\emph{\href{https://GitHub.com/matoanbach/RSS-aggregator}{GitHub}}}
+    %         \resumeItemListStart  
+    %         \resumeItem{Implemented a simple server capable of handling GET/POST requests to read and write to local \textbf{PostgreSQL} database}
+    %         \resumeItem{Utilized \textbf{Thunder Client} for debugging and used \textbf{chi} and \textbf{chi/cors} to handle requests, error, and json responses }
+    %     \resumeItemListEnd
+
+    % \resumeProjectHeading
+    %     {\textbf{\href{https://GitHub.com/matoanbach/SED500_assignments}{Stock Picker}} $|$ \emph{HTML, CSS, JavaScript, Python, Selenium}}{\emph{\href{https://GitHub.com/matoanbach/SED500_assignments}{GitHub}}}
+    %         \resumeItemListStart  
+    %         \resumeItem{Implemented a simple static webpage using HTML, CSS and JavaScript to fetch and display stocks based on categories}
+    %         \resumeItem{Designed and implemented tests using \textbf{Selenium} to ensure the static webpage to function accordingly to user requirements}
+    %     \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}

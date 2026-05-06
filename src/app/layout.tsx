@@ -24,6 +24,11 @@ export const metadata: Metadata = {
   title: "Ma Toan Bach | AI Systems and Platform Engineer",
   description:
     "Portfolio of Ma Toan Bach featuring AI systems, platform engineering, developer tooling, and full-stack projects.",
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
